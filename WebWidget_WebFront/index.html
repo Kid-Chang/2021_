@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unknown's_lounge</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main" class="opacity-75">
+        <button id="colorChange" class="mt-5 btn btn-secondary">change your Image!</button>
+        <form id="greeting">
+            <h1 id="hello">HELLO!</h1>
+            <input type="text" required placeholder="ENTER YOUR NAME"
+            style="width: 40%; text-align: center">
+        </form>
+        <h2 id="time"></h2>
+        <div id="weather">
+            <h4 id="condition"></h4>
+            <div id="loca"></div>
+        </div>
+        <form id="todo-form" >
+            <input id="todo-input" type="text" required style="width: 40%; text-align: center" placeholder="Write your todo List">
+        </form>
+        <form>
+            <ul id="todo-list">
+            </ul>
+        </form>
+
+
+
+        
+    </div>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/realtime.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
