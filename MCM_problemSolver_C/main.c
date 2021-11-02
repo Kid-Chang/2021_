@@ -18,6 +18,7 @@ int main() {
     for(int j=0;j<i;j++){ //입력확인용 코드.
         printf("%d %d\n", martix_count[j][0],martix_count[j][1]);    
     }
+    printf("-------\n");
     
     int ***m = malloc(sizeof(int **) * i);
     for (int depth = 0; depth < i; depth++) { // 배열 자체가 몇 개인지. 
@@ -48,7 +49,7 @@ int main() {
     //sol 배열.
     int sol[martix_count[0][0]][martix_count[i][1]];
 
-
+    
 
 
 
