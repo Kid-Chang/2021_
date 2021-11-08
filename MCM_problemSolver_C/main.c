@@ -88,34 +88,59 @@ int main() {
         printf("\n");
     }
     
-    printf("최적값: %d", result);
+    printf("최적값: %d\n", result);
 
 
     FILE *write = fopen("input_sol.txt", "w+");
         fprintf(write, "%d\n", result);   // 서식을 지정하여 문자열을 파일에 저장
         fprintf(write, "output Matrix\n");
         // 결과 matrix 출력 코드구현
+        int count, sum;
+        int multi_result[501][501]={0,};
+        int last_numofNM;
+        for (count=0; count<count_input-1; count++){ // count_input만큼의 곱셈 계산 수행.
+            for (a=0; a< totalNumOfNM[count]; a++){ // 행
+                for (b=0; b< totalNumOfNM[count+2]; b++){  // 열
+                    if(multi_result[a][b]==0){
+                        multi_result[a][b]=1;
+                    }
+                    sum=multi_result[a][b];
+                    for(int k=0; k< totalNumOfNM[count+1]; k++){ // 내부 사이의 계산.
+                        sum+=m[count][a][k]*m[count+1][k][b]; // 바보... m에서 해야할게 아니라 multi_result에서 해야하지 않나...?
+                        last_numofNM=count;
+                        // printf("%d %d %d\n", count,a,b);
+                    }
+                    multi_result[a][b]=sum;
+                    printf("%d ",sum);
+                }
+                printf("\n");
+            }
+            printf("\n");
+
+        }
+
+        for (a=0;a<totalNumOfNM[0];a++){
+            for(b=0;b<totalNumOfNM[last_numofNM+2];b++){
+                fprintf(write, "%d ", multi_result[a][b] );
+            }
+            fprintf(write, "\n");
+        }
+
         for (int a=0;a<count_input;a++){
             fprintf(write, "input Matrix %d \n", (a+1));
             for(int b=0; b<martix_count[a][0]; b++){
                 for(int c=0; c < martix_count[a][1]; c++){
                     fprintf(write, "%d ",m[a][b][c]);
             }
-                    fprintf(write, "\n");
+            fprintf(write, "\n");
         }
     }
-
-
-    
     
     fclose(write);    // 파일 포인터 닫기
 
-
-
-// 아직 free는 구현 안함. 나중에..
-
     fclose(fp);    // 파일 포인터 닫기
 
+// 아직 free는 구현 안함. 나중에..
 }
 
 int min(int x, int y){
