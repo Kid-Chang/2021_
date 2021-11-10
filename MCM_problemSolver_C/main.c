@@ -120,13 +120,13 @@ int main() {
                     for(int k=0; k< totalNumOfNM[count+1]; k++){ // 내부 사이의 계산.
                         sum+=multi_result[a][k]*m[count+1][k][b]; 
                         
-                        printf("%d %d ", multi_result[a][k], m[count+1][k][b]);
-                        printf("mulitple %d\n", sum);
+                        // printf("%d %d ", multi_result[a][k], m[count+1][k][b]);
+                        // printf("a: %d b: %d k: %d. mulitple %d\n", a, b, k, sum);
                         last_numofNM=count;
                     }
                     temp[a][b]=sum;
                 }           
-                printf("\n");
+                // printf("\n");
 
             }
             for(int A=0; A<a;A++){
@@ -134,14 +134,16 @@ int main() {
                     multi_result[A][B]=temp[A][B];
                 }
             }
-            printf("\n");
+            // printf("\n");
         }
 
         for (a=0;a<totalNumOfNM[0];a++){
             for(b=0;b<totalNumOfNM[last_numofNM+2];b++){
                 fprintf(write, "%d ", temp[a][b] );
+                printf("%d ", temp[a][b] );
             }
             fprintf(write, "\n");
+            printf("\n");
         }
 
         for (int a=0;a<count_input;a++){
