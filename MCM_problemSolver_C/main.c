@@ -97,31 +97,59 @@ int main() {
         // 결과 matrix 출력 코드구현
         int count, sum;
         int multi_result[501][501]={0,};
+        int temp[501][501];
         int last_numofNM;
-        for (count=0; count<count_input-1; count++){ // count_input만큼의 곱셈 계산 수행.
+
+        //처음 한번은 multi_result의 첫번째 행렬에 m의 첫 행렬을 입력해줘야함.
+        printf("%d\n", totalNumOfNM[0]);
+        printf("%d\n", totalNumOfNM[1]);
+        printf("-----\n");
+        
+        for (a=0; a<totalNumOfNM[0];a++){
+            for(b=0; b<totalNumOfNM[1];b++){
+                multi_result[a][b]=m[0][a][b];
+                printf("%d ", multi_result[a][b]);
+            }
+            printf("\n");
+        }
+        printf("-----\n");
+
+
+        for (count=0; count<count_input-1; count++){ // count_input-1 만큼의 곱셈 계산 수행.
             for (a=0; a< totalNumOfNM[count]; a++){ // 행
                 for (b=0; b< totalNumOfNM[count+2]; b++){  // 열
-                    if(multi_result[a][b]==0){
-                        multi_result[a][b]=1;
-                    }
-                    sum=multi_result[a][b];
+                    sum=0;
+                    
                     for(int k=0; k< totalNumOfNM[count+1]; k++){ // 내부 사이의 계산.
-                        sum+=m[count][a][k]*m[count+1][k][b]; // 바보... m에서 해야할게 아니라 multi_result에서 해야하지 않나...?
+                        sum+=multi_result[a][k]*m[count+1][k][b]; 
+                        
+                        printf("%d %d ", multi_result[a][k], m[count+1][k][b]);
+                        printf("mulitple %d\n", sum);
                         last_numofNM=count;
                         // printf("%d %d %d\n", count,a,b);
                     }
-                    multi_result[a][b]=sum;
-                    printf("%d ",sum);
+                    temp[a][b]=sum;
+
                 }
+                
                 printf("\n");
+
+            }
+            for(int A=0; A<a;A++){
+                for(int B=0; B<b;B++){
+                    multi_result[A][B]=temp[A][B];
+
+                }
+
             }
             printf("\n");
+
 
         }
 
         for (a=0;a<totalNumOfNM[0];a++){
             for(b=0;b<totalNumOfNM[last_numofNM+2];b++){
-                fprintf(write, "%d ", multi_result[a][b] );
+                fprintf(write, "%d ", temp[a][b] );
             }
             fprintf(write, "\n");
         }
