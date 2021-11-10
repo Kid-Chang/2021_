@@ -27,15 +27,9 @@ C=(r x s)
 
 MCM문제는 행렬들이 주어졌을 때, 가장 적은 횟수로 행렬을 계산할 수 있는, 그 값을 출력해야한다.
 
-입력은 밑의 사진처럼 txt파일로 제공하고, 입력받은 후, 프로그램내부에서 행렬의 값을 채워넣으면 된다.
+입력은 row와 column을 "한줄에 한칸 띄어쓰기 규격, 매 행렬은 줄바꿈"으로 표현된 txt파일로 제공한다.
 
-![image-20211026105856691](/Users/bakchanghyun/Library/Application Support/typora-user-images/image-20211026105856691.png)
-
-출력은 밑의 사진처럼 가장 적은 횟수와 output input 순으로 출력해준다.
-
-
-
-<img src="/Users/bakchanghyun/Library/Application Support/typora-user-images/image-20211026105816177.png" alt="image-20211026105816177" style="zoom:60%;" />
+출력은 연쇄행렬 계산의 최솟값과 output행렬, input행렬 순으로 나오게 한다.
 
 
 
@@ -62,11 +56,3 @@ i < j, M\[i][j]= min(M\[1][k] + M\[k+1][j] + d<sub>0</sub>d<sub>k</sub>d<sub>j</
 만약, M\[1][1]이라면 첫번째 행렬 자기자신을 연산할 수 없음으로 0이 되고, M\[4][6]이면 3번째 행렬부터 6번째 행렬까지의 합을 구하는 연산중 가장 최솟값을 넣어준다. M\[4][6] = min(M\[4][k] + M\[k+1][6] + d<sub>0</sub>d<sub>k</sub>d<sub>6</sub>, 단 (4<=k<=5) )
 
 결국 M이라는 행렬의 우측 최상단 값에 가장 최적의 값이 나오게 된다.
-
-
-
-
-
-20211108.
-
-2개의 행렬곱은 가능하나, 3개이상의 행렬에는 문제발생. 해결방안-> multi_result에 첫번째 행렬은 미리 저장하고, 109번째줄의 ` sum+=m[count][a][k]*m[count+1][k][b]; ` 에서 앞의 m을 multi_resultf로 계산하도록 만들기.

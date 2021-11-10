@@ -5,14 +5,12 @@
 int min(int x, int y);
 
 int main() {
-    // 문자열 포인터 변수니까 i를 계속더해주면 더할때마다 메모리 주소가 뒤로 움직임으로 계속 맨끝이였던 5만 출력됨.
-    // 시작 포인터를 가리키는 변수도 있어야함.
     int martix_count[100][2];
     int calculate[101][101];
     int count_input=0;
     int result; //최적값.
     
-    FILE *fp = fopen("input.txt", "r");    // hello.txt 파일을 읽기 모드로 열기.  
+    FILE *fp = fopen("input.txt", "r");
 
     while (!feof(fp)) {
         fscanf(fp, "%d %d", &martix_count[count_input][0], &martix_count[count_input][1]);
@@ -49,8 +47,7 @@ int main() {
         for(int b=0; b<martix_count[a][0]; b++){
             for(int c=0; c < martix_count[a][1]; c++){
                 m[a][b][c]=rand()%9+1; // 난수 생성
-                printf("%d ",m[a][b][c]);
-                
+                printf("%d ",m[a][b][c]); 
             }
 
             printf("\n");
@@ -126,25 +123,18 @@ int main() {
                         printf("%d %d ", multi_result[a][k], m[count+1][k][b]);
                         printf("mulitple %d\n", sum);
                         last_numofNM=count;
-                        // printf("%d %d %d\n", count,a,b);
                     }
                     temp[a][b]=sum;
-
-                }
-                
+                }           
                 printf("\n");
 
             }
             for(int A=0; A<a;A++){
                 for(int B=0; B<b;B++){
                     multi_result[A][B]=temp[A][B];
-
                 }
-
             }
             printf("\n");
-
-
         }
 
         for (a=0;a<totalNumOfNM[0];a++){
@@ -165,10 +155,9 @@ int main() {
     }
     
     fclose(write);    // 파일 포인터 닫기
-
     fclose(fp);    // 파일 포인터 닫기
+    free(m);    // 포인터 할당 풀어주기.
 
-// 아직 free는 구현 안함. 나중에..
 }
 
 int min(int x, int y){
