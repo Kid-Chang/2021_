@@ -126,7 +126,6 @@ int main() {
                     }
                     temp[a][b]=sum;
                 }           
-                // printf("\n");
 
             }
             for(int A=0; A<a;A++){
@@ -134,7 +133,6 @@ int main() {
                     multi_result[A][B]=temp[A][B];
                 }
             }
-            // printf("\n");
         }
 
         for (a=0;a<totalNumOfNM[0];a++){
