@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset code */
+
+/* div, li{
+    border: 1px solid black;
+} */
+a { text-decoration:none } 
+
+header{
+    display: flex;
+    flex-basis: 0;
+    height: 50px;
+}
+
+.nav-logo{
+    width: 150px;
+}
+
+.nav-option{
+    flex: 4;
+}
+.nav-search-admin{
+    flex: 5;
+}
+
+.nav-logo{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+}
+
+.nav-option {
+	border: 4px solid black;
+	
+}
+
+.nav-option-items-ul{
+    list-style:none;
+
+	
+}
+.option-item{
+	width: auto;
+	float: left;
+	margin: 10px;
+}
+
+.nav-search-admin{
+	display: flex;
+	justify-content:flex-end;
+	margin-right: 30px;
+}
+
+.top-video{
+	position: relative;
+}
+#top-video-logo{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+#top-video-vid{
+	position:absolute;
+}
+#top-video-desc{
+	position: absolute;
+	top: 450px;
+	left: 70px;
+	font-size: 20px;
+	width: 520px;
+	/* height: 104px; */
+	color: white;
+	line-height: 25px;
+}
+.vid-play{
+	background-color: white;
+}
+.vid-info{
+	background-color: rgba(78,78,78,0.8);
+}
+.hot-now-contents{
+	display: flex;
+}
+.content-title{
+	font-size: 20px;
+	/* color: white; */
+}
+.top-10-contents{
+	display: flex;
+	width: 2000px;
+	
+
+}
+.content-10s{
+	height: 151px;
+	margin-right: 50px;
+	box-sizing: border-box;
+
+}
+.option-item-select{
+	color: white;
+}

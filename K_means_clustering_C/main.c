@@ -91,6 +91,8 @@ int main(){
     int iterationCount=0;
     int centInDataCount;
     double tempX, tempY; 
+    FILE *write = fopen("input_sol.txt", "w+");
+
     while(flag<k){
         iterationCount++;
         flag=0; // 밑의 과정에서 변동되는 값이 없으면 flag는 0이 되고, while문이 종료된다.
@@ -139,11 +141,25 @@ int main(){
                     }
             }
         }
-
-            printf("%d 사이클에서의 flag는: %d K는 %d. 사이클 종료.\n",iterationCount, flag,k);
+        //여기에서 출력코드를 넣어줘야할듯.
+        printf("iter: %d\n", iterationCount);
+    fprintf(write, "iter: %d\n", iterationCount);
+        for (int ClusterGetsu = 0; ClusterGetsu < k; ClusterGetsu++) {
+            for (int dataGetsu =0; dataGetsu< n; dataGetsu++){
+                if (data[dataGetsu].nowDemension==ClusterGetsu ){
+                    printf("%d ",dataGetsu+1);
+                    fprintf(write, "%d ",dataGetsu+1); // 데이터가 1번부터 시작하기 위해 +1을 해줌.
+                }
+            }
+            printf("\n");
+            fprintf(write, "\n");
+        }
+        
+        printf("%d 사이클에서의 flag는: %d K는 %d. 사이클 종료.\n",iterationCount, flag,k);
         if(iterationCount>1000){
             break;
         }
+
     }
 
     
@@ -151,7 +167,6 @@ int main(){
         printf("%d번째 데이터의 최종 클러스터는 %d\n", N, data[N].nowDemension);
     }
 
-        FILE *write = fopen("input_sol.txt", "w+");
 
         // fprintf(write, "%d\n", result);   // 서식을 지정하여 문자열을 파일에 저장
         

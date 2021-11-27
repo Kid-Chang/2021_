@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset code */
+
+
+/* #이 아이디  .이 클래스 */
+div{
+    border: 1px solid black;
+    background-color: black;
+}
+
+
+header {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#main_1_img{
+    width: 1425px;
+}
+
+#logo{
+    height: 40px;
+}
+
+
+.header_div {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#main_1, #main_2, #main_3, #main_4, #main_5{   
+    display: flex;
+    flex-direction: row;
+}
+#main_6{
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    margin-top: 13px;
+}
+.NUL{
+    flex-grow: 2;
+}
+
+#header_contents{
+    flex-grow:  1;
+    flex-basis:  0;
+}
+
+.desc_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px;
+    
+
+}
+#main_2{
+    display: flex;
+    justify-content: space-around;
+    flex-grow:  1;
+    flex-basis:  0;
+}
+
+
+p{
+    color: white;
+    text-align: left;
+}
+
+.desc_title{
+    font-size: 50px;
+    line-height:120%;
+}
+.desc{
+    font-size: 26px;
+    line-height: 50px;
+
+}
+
+#main_1 {
+    position: relative;
+    opacity: 90%;
+}
+#_1_desc{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    background-color: rgba(255, 255, 255, 0);
+    width: 640px; 
+    box-sizing: border-box;
+}
+.input_email{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+}
+
+
+#main_title, #main_desc, #main_desc_lower, .input_email{
+    text-align: center;
+}
+
+#main_6{
+    align-items: center;
+}
+.faq_question{
+    width: 815px;
+    height: 76px;
+    font-size: 26px;
+    background-color: gray;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+.faq_answer {
+    width: 815px;
+    background-color: gray;
+    padding: 31.2px;
+    box-sizing: border-box;
+    display: none;
+}
+.footer_box{
+    padding: 100px 300px 100px 300px;
+
+    box-sizing: border-box;
+}
+.footer_box_ul{
+    color: white;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 20px;
+}

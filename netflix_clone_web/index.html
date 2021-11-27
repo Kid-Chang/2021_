@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷플릭스 코리아</title>
+    <link rel="stylesheet" href="css/before-page.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo_div" class="header_div">
+            <img id="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png"
+                alt="">
+        </div>
+        <div class="header_div"></div>
+        <div class="header_div"></div>
+
+        <div id="lang_div" class="header_div">
+            <select>
+                <option>한국어</option>
+                <option>영어</option>
+            </select>
+
+        </div>
+        <div id="login_div" class="header_div">
+            <button class="login_button" onclick="location.href='main-page.html'">login</button>
+        </div>
+    </header>
+
+
+    <div id="main_1">
+        <div id="_1_img">
+            <img id="main_1_img"
+                src="https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/780e6f4e-6f56-4926-82f5-ee222fb056c0/KR-ko-20211115-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+                alt="background_1">
+
+        </div>
+        <div id="_1_desc" class="desc_div">
+            <p class="desc_title" id="main_title">
+                영화, TV 프로그램을<br>무제한으로.
+            </p><br>
+            <p class="desc" id="main_desc">
+                다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.
+            </p>
+            <br>
+            <p class="desc_lower" id="main_desc_lower">
+                시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
+            </p>
+            <form class="input_email" action="javascript:email_print();">
+                <input type="email" name="email_input" required id="email_input" placeholder="이메일 주소" style="width: 450px; height: 60px;     box-sizing: border-box;">
+                
+                <button type="submit" style="width: 166px; height: 60px; background-color: red; color: white;" box-sizing: border-box;
+                >시작하기 ></button>
+            </form>
+
+        </div>
+
+    </div> 
+
+    <div id="main_2">
+        <div id="_2_desc" class="desc_div">
+            <p class="desc_title">TV로 즐기세요. </p>
+            <br>
+            <p class="desc">스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.</p>
+        </div>
+        <div id="2_img">
+            <img id="main_2_img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                alt="">
+        </div>
+    </div>
+    <div id="main_3">
+        <div id="3_img">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+        </div>
+        <div id="_3_desc" class="desc_div">
+            <p class="desc_title">
+                즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.
+            </p>
+            <br>
+            <p class="desc" class="desc_div">간편하게 저장하고 빈틈없이 즐겨보세요.
+            </p>
+        </div>
+    </div>
+
+    <div id="main_4">
+        <div id="4_desc" class="desc_div">
+            <p class="desc_title">다양한 디바이스에서 시청하세요.</p>            <br>
+
+            <p class="desc">각종 영화와 TV 프로그램을 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀 없습니다.
+            </p>
+        </div>
+        <div id="4_img">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
+        </div>
+    </div>
+    <div id="main_5">
+
+        <div id="5_img">
+            <img src="https://occ-0-2218-1361.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABTyynLTvOBU46RmBnCIPyjAryrXCZKImpoXdp7Mz54jVGKnBQ1X84bzR-3vtD-RA4uu2b1FjrDgfxE6KElG14WAXW19X.png?r=acf"
+                alt="">
+        </div>
+        <div id="5_desc" class="desc_div">
+            <p class="desc_title">어린이 전용 프로필을<br> 만들어 보세요.
+            </p>            <br>
+
+            <p class="desc">자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스 회원이라면 무료입니다.
+            </p>
+        </div>
+    </div>
+
+    <div id="main_6">
+
+        <p class="desc_title">자주 묻는 질문</p>
+        <ul class="faq_list">
+            <li class="faq_list_item what_is_netfilx">
+                <button class="faq_question">
+                    넷플릭스란 무엇인가요?
+                </button>
+                <div class="closed faq_answer desc">
+                    <p>
+                        넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br><br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+                    </p>
+                </div>
+            </li>
+            <li class="faq_list_item what_is_netfilx">
+                <button class="faq_question">
+                    넷플릭스 요금은 얼마인가요?
+                </button>
+                <div class="closed faq_answer desc">
+                    <p>
+                        스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십 요금은 월 9,500원부터 17,000원까지 다양합니다. 추가 비용이나 약정이 없습니다.
+                    </p>
+                </div>
+            </li>
+            <li class="faq_list_item what_is_netfilx">
+                <button class="faq_question">
+                    어디에서 시청할 수 있나요?
+                </button>
+                <div class="closed faq_answer desc">
+                    <p>
+                        언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br>iOS, Android, Windows 10용 앱에서는 좋아하는 프로그램을 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <footer>
+        <div class="footer_box">
+            <ul class="footer_box_ul">
+                <li class="footer-link-item">자주 묻는 질문</li>
+                <li class="footer-link-item">투자정보</li>
+                <li class="footer-link-item">개인정보</li>
+                <li class="footer-link-item">속도 테스트</li>
+                <li class="footer-link-item">고객센터</li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+                <li class="footer-link-item"></li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="/JS/before-page.js"></script>
+</body>
+
+</html>
