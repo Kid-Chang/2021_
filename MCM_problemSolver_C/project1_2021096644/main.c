@@ -63,8 +63,8 @@ int main() {
     int i,j,k;
     for(i=0;i<count_input;i++){
         for(j=0;j<count_input-i;j++){
-            a = j;
-            b = j+i;
+            a = j; //대각선
+            b = j+i; //대각선
             if(a == b){
                 calculate[a][b] = 0;
             }

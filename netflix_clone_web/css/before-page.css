@@ -51,7 +51,7 @@ table {
 
 /* #이 아이디  .이 클래스 */
 div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: black;
 }
 
