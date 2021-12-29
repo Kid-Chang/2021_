@@ -14,8 +14,14 @@
                     body: JSON.stringify(payload)
                 });
             },
+            put(url, payload){
+                return fetch(url, {method:"PUT",
+                    headers:{"content-Type": "application/json"},
+                    body: JSON.stringify(payload)
+                });
+            },
             patch(url, payload){
-                return fetch(url, {method:"POST",
+                return fetch(url, {method:"PATCH",
                     headers:{"content-Type": "application/json"},
                     body: JSON.stringify(payload)
                 });
@@ -26,18 +32,28 @@
         };
 
         console.log(request);
-        // 1. GET 요청
-        request.get("/todos/1")
-        .then(responce=> responce.json())
-        .then(console.log)
+        // 1. GET 요청 (값 가져오기)
+        // request.get("/todos/1")
+        // .then(responce=> responce.json())
+        // .then(console.log)
 
-        // 2. POST 요청
-        request.post("/todos", {id:4, content:"anguler", completed:false})
-        .then(responce => responce.json())
-        .then(console.log)
+        // 2. POST 요청 (값 추가하기)
+        // request.post("/todos", {id:4, content:"anguler", completed:false})
+        // .then(responce => responce.json())
+        // .then(console.log)
 
-        // 3. PATCH 요청
-        request.patch("/todos", {id:4, content:"anguler", completed:false})
+        // 3. PUT 요청 (기존 인덱스의 값 통째로 변경하기)
+        // request.put("/todos/4", {id:4, content:"REACT",completed:true})
+        // .then(responce => responce.json())
+        // .then(console.log)
+
+        // 4. PATCH 요청 (기존 인덱스의 값 일부 변경하기)
+        // request.patch("/todos/4", {content:"Vue"})
+        // .then(responce => responce.json())
+        // .then(console.log)
+
+        // 5. DELETE
+        // request.delete("/todos/4")
     </script>
 </body>
 </html>
