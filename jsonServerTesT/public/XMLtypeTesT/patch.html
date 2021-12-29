@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <pre></pre>    
+    <script>
+        //patch는 요소를 일부 수정할 때.
+        const xhr = new XMLHttpRequest();
+        xhr.open("PATCH","/todos/4");
+
+        xhr.setRequestHeader("content-type",'application/json');
+        xhr.send(JSON.stringify({completed:false}));
+        
+        //onload 이벤트는 요청이 성공적으로 완료된 경우 발생한다.
+
+        xhr.onload = () =>{
+            if(xhr.status ===200){
+                console.log(xhr.status);
+                document.querySelector('pre').textContent=xhr.response;
+            }
+            else{
+                console.error("error", xhr.status, xhr.statusText);
+            }
+        }
+    </script>
+</body>
+</html>

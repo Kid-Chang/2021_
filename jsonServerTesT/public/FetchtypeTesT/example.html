@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<body>
+    hello
+    <pre></pre>    
+    <script>
+        const request ={
+            get(url){
+                return fetch(url);
+            },
+            post(url, payload){
+                return fetch(url, {method:"POST",
+                    headers:{"content-Type": "application/json"},
+                    body: JSON.stringify(payload)
+                });
+            },
+            patch(url, payload){
+                return fetch(url, {method:"POST",
+                    headers:{"content-Type": "application/json"},
+                    body: JSON.stringify(payload)
+                });
+            },
+            delete(url){
+                return fetch(url,{method: "DELETE"});
+            }
+        };
+
+        console.log(request);
+        // 1. GET 요청
+        request.get("/todos/1")
+        .then(responce=> responce.json())
+        .then(console.log)
+
+        // 2. POST 요청
+        request.post("/todos", {id:4, content:"anguler", completed:false})
+        .then(responce => responce.json())
+        .then(console.log)
+
+        // 3. PATCH 요청
+        request.patch("/todos", {id:4, content:"anguler", completed:false})
+    </script>
+</body>
+</html>

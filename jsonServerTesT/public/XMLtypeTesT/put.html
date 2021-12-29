@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <pre></pre>    
+    <script>
+        //put은 요소 부분 전체를 교체할 때.
+        const xhr = new XMLHttpRequest();
+        xhr.open("PUT","/todos/4");
+
+        xhr.setRequestHeader("content-type",'application/json');
+        xhr.send(JSON.stringify({id:4,content:"REACT",completed:true}));
+
+        xhr.onload = () =>{
+            if(xhr.status ===200){
+                console.log(xhr.status);
+                document.querySelector('pre').textContent=xhr.response;
+            }
+            else{
+                console.error("error", xhr.status, xhr.statusText);
+            }
+        }
+    </script>
+</body>
+</html>

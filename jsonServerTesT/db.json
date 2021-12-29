@@ -1,0 +1,41 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "HTML",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "content": "css",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "content": "JavaScr",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "content": "anguler",
+      "completed": false
+    }
+  ],
+  "nextTodos": [
+    {
+      "id": 1,
+      "content": "HTML",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "content": "css",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "content": "JavaScr",
+      "completed": true
+    }
+  ]
+}

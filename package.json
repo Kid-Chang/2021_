@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
   }
 }

@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import Home from "./apiComp/Home";
 import App from "./App";
-import KakaoLogin from "react-kakao-login";
+import reportWebVitals from "./reportWebVitals";
+import JustTesT from "./JustTesT";
+import JustAverage from "./JustAverage";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
-        <Home />
+        <BrowserRouter>
+            <App />
+            {/* <JustAverage /> */}
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root"),
 );
