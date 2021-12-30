@@ -4,12 +4,13 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./apiComp/Home";
 import App from "./App";
-import KakaoLogin from "react-kakao-login";
+import AxiosTesT from "./AxiosTesT";
 
 ReactDOM.render(
     <React.StrictMode>
         <App />
         <Home />
+        {/* <AxiosTesT /> */}
     </React.StrictMode>,
     document.getElementById("root"),
 );

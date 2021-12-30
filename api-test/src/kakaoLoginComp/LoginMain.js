@@ -19,7 +19,7 @@ function LoginMain() {
     return (
         <LoginForm href={KAKAO_AUTH_URL}>
             Kakao Login
-            {console.log(KAKAO_AUTH_URL)}
+            {console.log(`auth_url: ${KAKAO_AUTH_URL}`)}
         </LoginForm>
     );
 }

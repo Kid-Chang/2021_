@@ -23,7 +23,7 @@ const JustAverage = () => {
         inputEl.current.focus();
     }, [number, list]); // number 혹은 list 가 바뀌었을 때만 함수 생성.. !!!! onInsert함수는 number와 list 값을 새롭게 받아서 함수를 처리한다. 변수에 의존하는 (의존성?)함수라고 생각하자.
 
-    //통상적으로 숫자, 문자열, 객체처럼 일반 값을 재사용하려면 useMemo를. 함수를 재사용하려면 useCallback을...!
+    //통상적으로 숫자, 문자열, 객체처럼 일반 값을 재사용하려면 useMemo를. 함수를 재사용하려면 useCallback을...! 
 
     const avg = useMemo(() => getAverage(list), [list]);
 
