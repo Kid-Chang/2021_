@@ -28,6 +28,11 @@
       "id": 6,
       "content": "hello",
       "complete": false
+    },
+    {
+      "content": "asdf",
+      "completed": true,
+      "id": 7
     }
   ],
   "nextTodos": [

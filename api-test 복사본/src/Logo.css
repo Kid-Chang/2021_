@@ -1,0 +1,53 @@
+.logo_a {
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    height: auto;
+}
+
+.logo_all {
+    width: 100%;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 30px 70px;
+}
+
+.lologo {
+    width: 8.375rem;
+    height: 2.25rem;
+    fill: #e50914;
+    line-height: normal;
+}
+
+.sub {
+    display: flex;
+    width: 100%;
+    margin-left: 1420px;
+}
+
+.logo_t {
+    color: red;
+    display: flex;
+}
+
+.language {
+    
+}
+
+.login {
+    margin-left: 30px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #e50914;
+}
