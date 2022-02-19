@@ -1,0 +1,392 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+h3{
+    margin-left: 10px;
+    border-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+p{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#mapImg{
+    width:1500px;
+    position: relative;
+}
+
+#notice{
+    position: absolute;
+    left: 110px;
+    top: 15px;
+}
+
+/* 창현 한거 */
+.E110{
+    position: absolute;
+    left:1252px;
+    top:218px;
+}
+
+.Ec01{
+    position: absolute;
+    left:1040px;
+    top:33px;
+}
+
+.Ec03{
+    position: absolute;
+    left: 235px;
+    top:150px;
+}
+
+.Ec02{
+    position: absolute;
+    left: 975px;
+    top:56px;
+}
+
+.Ec04{
+    position: absolute;
+    left:160px;
+    top:80px;
+}
+
+.Ec05{
+    position: absolute;
+    left: 147px;
+    top:430px;
+}
+
+.E501{
+    position: absolute;
+    left: 500px;
+    top:27px;
+}
+
+.E502{
+    position: absolute;
+    left: 625px;
+    top:57px;
+}
+
+.E503{
+    position: absolute;
+    left: 511px;
+    top:93px;
+}
+
+.E504{
+    position: absolute;
+    left: 470px;
+    top:112px;
+}
+/* 창현 한거 끝 */
+
+/* 지호 시작 */
+
+
+/* 노란건물 */
+
+.E101 {
+    position: absolute;
+    left: 1174px;
+    top: 460px;
+}
+
+.E102 {
+    position: absolute;
+    left: 914px;
+    top: 392px;
+}
+
+.E103 {
+    position: absolute;
+    left: 863px;
+    top: 366px;
+}
+
+.E104 {
+    position: absolute;
+    left: 1084px;
+    top: 266px;
+}
+
+.E105 {
+    position: absolute;
+    left: 1102px;
+    top: 240px;
+}
+
+.E106 {
+    position: absolute;
+    left: 1124px;
+    top: 220px;
+}
+
+.E107 {
+    position: absolute;
+    left: 1136px;
+    top: 194px;
+}
+
+.E108 {
+    position: absolute;
+    left: 1168px;
+    top: 190px;
+}
+
+.E109 {
+    position: absolute;
+    left: 1198px;
+    top: 214px;
+}
+
+.E110 {
+    position: absolute;
+    left: 1252px;
+    top: 218px;
+}
+
+.E111 {
+    position: absolute;
+    left: 1196px;
+    top: 266px;
+}
+
+
+/* 빨간건물 */
+
+.E201 {
+    position: absolute;
+    left: 856px;
+    top: 680px;
+}
+
+.E202 {
+    position: absolute;
+    left: 954px;
+    top: 602px;
+}
+
+.E203 {
+    position: absolute;
+    left: 1104px;
+    top: 666px;
+}
+
+.E204 {
+    position: absolute;
+    left: 1008px;
+    top: 736px;
+}
+
+.E205 {
+    position: absolute;
+    left: 816px;
+    top: 540px;
+}
+
+.E206 {
+    position: absolute;
+    left: 714px;
+    top: 606px;
+}
+
+.E207 {
+    position: absolute;
+    left: 614px;
+    top: 580px;
+}
+
+.E208 {
+    position: absolute;
+    left: 722px;
+    top: 518px;
+}
+
+.E209 {
+    position: absolute;
+    left: 772px;
+    top: 478px;
+}
+
+
+/* 지호 끝 */
+
+
+
+/* 선명 한거(선명이가 한 거라는 뜻) */
+.E301{
+    position: absolute;
+    left:635px;
+    top:454px;
+}
+
+.E302{
+    position: absolute;
+    left:631px;
+    top:396px;
+}
+
+.E303{
+    position: absolute;
+    left:691px;
+    top:414px;
+}
+
+.E304{
+    position: absolute;
+    left:653px;
+    top:343px;
+}
+
+.E305{
+    position: absolute;
+    left:494px;
+    top:396px;
+}
+
+.E306{
+    position: absolute;
+    left:506px;
+    top:635px;
+}
+
+.E307{
+    position: absolute;
+    left:398px;
+    top:527px;
+}
+
+.E308{
+    position: absolute;
+    left:529px;
+    top:255px;
+}
+
+.E309{
+    position: absolute;
+    left:448px;
+    top:334px;
+}
+
+.E310{
+    position: absolute;
+    left:440px;
+    top:309px;
+}
+
+.E311{
+    position: absolute;
+    left:375px;
+    top:357px;
+}
+
+.E312{
+    position: absolute;
+    left:288px;
+    top:423px;
+}
+
+.E313{
+    position: absolute;
+    left:245px;
+    top:448px;
+}
+
+.E314{
+    position: absolute;
+    left:243px;
+    top:404px;
+}
+
+.E315{
+    position: absolute;
+    left:190px;
+    top:388px;
+}
+
+.E316{
+    position: absolute;
+    left:215px;
+    top:300px;
+}
+
+.E401{
+    position: absolute;
+    left:783px;
+    top:312px;
+}
+
+.E402{
+    position: absolute;
+    left:941.5px;
+    top:228px;
+}
+
+.E403{
+    position: absolute;
+    left:1013px;
+    top:179px;
+}
+
+.E404{
+    position: absolute;
+    left:1209.5px;
+    top:120px;
+}
+
+.E405{
+    position: absolute;
+    left:931px;
+    top:73.5px;
+}
+
+.E406{
+    position: absolute;
+    left:764.5px;
+    top:136px;
+}
+
+/* 선명 한거 끝 (더이상 선명하지 않다는 뜻 아님) */
+.blocks{
+    width:30px;
+    height: 30px;
+    border: 0px solid rgb(102, 18, 18);
+     /* 코드 점검시 1px로 수정. */
+    background-color: rgba(0,0,0,0); 
+    padding: 5px; }
+
+.exp{
+    width:300px;
+    border: 3px solid #e0e412;
+    display:none;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+.close{
+    width: 80px;
+    background-color: white;
+}
+
+.wrap{
+    margin-left: 10px;
+    width: 270px;
+    height: 350px;
+    overflow-x: scroll;
+    white-space:nowrap
+  }
+  .wrap img{
+      width:300px;
+      height:97%;
+  }
+
+ 

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ERICA online MAP</title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+        </style>
+    </head>
+
+    <body>
+        <img src="./src/erica_map.jpg" alt="에리카지도" id="mapImg" />
+        <!-- 창현 한거 -->
+        <button class="Ec04 blocks"></button>
+        <button class="Ec03 blocks"></button>
+        <button class="Ec01 blocks"></button>
+        <button class="Ec02 blocks"></button>
+        <button class="Ec05 blocks"></button>
+        <button class="E501 blocks"></button>
+        <button class="E502 blocks"></button>
+        <button class="E503 blocks"></button>
+        <button class="E504 blocks"></button>
+        <!-- 창현 한거 끝 -->
+        <!--지호 시작-->
+        <!--노란건물-->
+        <button class="E101 blocks"></button>
+        <button class="E102 blocks"></button>
+        <button class="E103 blocks"></button>
+        <button class="E104 blocks"></button>
+        <button class="E105 blocks"></button>
+        <button class="E106 blocks"></button>
+        <button class="E107 blocks"></button>
+        <button class="E108 blocks"></button>
+        <button class="E109 blocks"></button>
+        <button class="E110 blocks"></button>
+        <button class="E111 blocks"></button>
+        <!--빨간건물-->
+        <button class="E201 blocks"></button>
+        <button class="E202 blocks"></button>
+        <button class="E203 blocks"></button>
+        <button class="E204 blocks"></button>
+        <button class="E205 blocks"></button>
+        <button class="E206 blocks"></button>
+        <button class="E207 blocks"></button>
+        <button class="E208 blocks"></button>
+        <button class="E209 blocks"></button>
+
+        <!-- 김선명 한거 -->
+        <button class="E301 blocks"></button>
+        <button class="E302 blocks"></button>
+        <button class="E303 blocks"></button>
+        <button class="E304 blocks"></button>
+        <button class="E305 blocks"></button>
+        <button class="E306 blocks"></button>
+        <button class="E307 blocks"></button>
+        <button class="E308 blocks"></button>
+        <button class="E309 blocks"></button>
+        <button class="E310 blocks"></button>
+        <button class="E311 blocks"></button>
+        <button class="E312 blocks"></button>
+        <button class="E313 blocks"></button>
+        <button class="E314 blocks"></button>
+        <button class="E315 blocks"></button>
+        <button class="E316 blocks"></button>
+        <button class="E401 blocks"></button>
+        <button class="E402 blocks"></button>
+        <button class="E403 blocks"></button>
+        <button class="E404 blocks"></button>
+        <button class="E405 blocks"></button>
+        <button class="E406 blocks"></button>
+        <!-- 김선명 한거 끝 -->
+
+        <!-- 창현 한거 -->
+        <h3 id="notice">건물번호를 누르면 설명과 사진이 나옵니다.</h3>
+        <div class="Ec04 exp">
+            <h3>한국전기연구원</h3>
+            <p>
+                한국전기연구원(KERI)은 과학기술정보통신부 국가과학기술연구회
+                산하 정부출연연구기관으로, 우리나라에서 유일하게 전기를
+                전문적으로 연구하는 기관이다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/Ec04_001.JPG" />
+                <img class="img" src="./src/green/Ec04_002.JPG" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="Ec03 exp">
+            <h3>생산기술연구원</h3>
+            <p>
+                한국생산기술연구원 "융합기술연구소"는 융·복합 생산기술
+                개발·지원의 컨트롤 타워이다. 기술의 융·복합화를 통한 섬유, 로봇,
+                웰니스 등을 개발·실용화 하는데 중점을 두고 있으며, 융합 생산기술
+                개발 및 지원을 위한 조직을 운영하고 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/Ec03_001.JPG" />
+                <img class="img" src="./src/green/Ec03_002.JPG" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="Ec01 exp">
+            <h3>경기테크노파크</h3>
+            <p>
+                4차 산업혁명 선도 강소기업 발굴, 육성지역혁신거점 역할 강화를
+                통한 지역산업 생태계 조성, 사회적 가치 구현을 위한 혁신경영 체계
+                구축을 위해 건립되었다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/Ec01_001.jpg" />
+                <img class="img" src="./src/green/Ec01_002.jpg" />
+                <img class="img" src="./src/green/Ec01_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="Ec05 exp">
+            <h3>LG이노텍/마이크론연구소</h3>
+            <p>LG부품소재연구소</p>
+            <div class="wrap">
+                <img class="img" src="./src/green/Ec05_001.JPG" />
+                <img class="img" src="./src/green/Ec05_002.JPG" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="Ec02 exp">
+            <h3>한국산업기술시험원</h3>
+            <p>
+                연구개발 성과물이 국내외 시장에서 요구하는 성능 및 안전요건에
+                충족하는지 여부를 객관적이고 정확하게 검증하여 국민안전 확보,
+                수출경쟁력 제고 및 국가 기간산업 발전에 이바지한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/Ec02_001.jpg" />
+                <img class="img" src="./src/green/Ec02_002.jpg" />
+                <img class="img" src="./src/green/Ec02_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E501 exp">
+            <h3>창의관(기숙사)</h3>
+            <p>
+                행정실 연락처:<br />
+                031-400-4378 (동관-여)<br />031-400-4379 (서관-남)<br /><br />학기중
+                08:30 ~17:30<br />
+                방학중 10:00 ~ 17:00 <br />(점심시간 12:00 ~ 13:00)<br /><br />
+                <a href="https://www.hanyang.ac.kr/web/www/re13/"
+                    >기숙사식당메뉴확인</a
+                >
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/pink/E501_001.jpg" />
+                <img class="img" src="./src/pink/E501_002.jpg" />
+                <img class="img" src="./src/pink/E501_003.jpg" />
+                <img class="img" src="./src/pink/E501_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E502 exp">
+            <h3>인재관(기숙사)</h3>
+            <p>
+                행정실 연락처:<br />031-400-4380<br /><br />학기중 08:30
+                ~17:30<br />
+                방학중 10:00 ~ 17:00 <br />(점심시간 12:00 ~ 13:00)
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/pink/E502_001.jpg" />
+                <img class="img" src="./src/pink/E502_002.jpg" />
+                <img class="img" src="./src/pink/E502_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E503 exp">
+            <h3>행복관(기숙사)</h3>
+            <p>
+                행정실 연락처:<br />031-8032-9293<br /><br />학기중 08:30
+                ~17:30<br />
+                방학중 10:00 ~ 17:00 <br />(점심시간 12:00 ~ 13:00)
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/pink/E503_001.jpg" />
+                <img class="img" src="./src/pink/E503_002.jpg" />
+                <img class="img" src="./src/pink/E503_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E504 exp">
+            <h3>창의인재원 교육관</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/pink/E504_001.jpg" />
+                <img class="img" src="./src/pink/E503_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <!-- 창현 한거 끝 -->
+
+        <!--노란건물-->
+        <div class="E101 exp">
+            <h3>본관</h3>
+            <p>
+                총장팀, 교무처, 재무팀, 학사팀, 미디어전략센터가 위치해 있다.
+                한양대의 상징인 사자상이 앞에 있으며 크리스마스나 졸업날과 같은
+                기념일에 컨셉에 맞추어 예쁘게 변신하므로 앞에서 사진을 찍기
+                좋다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E101_001.jpg" />
+                <img class="img" src="./src/yell/E101_002.jpg" />
+                <img class="img" src="./src/yell/E101_003.jpg" />
+                <img class="img" src="./src/yell/E101_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E102 exp">
+            <h3>학생복지관</h3>
+            <p>
+                학생식당, 보건소, 서점, 카페, 편의점, 우체국, 여러 음식점 등
+                다양한 편의시설이 있으며 4~5층에는 동아리방과 소극장이, 3층에는
+                교직원식당과 휴게실 카페가 위치해 있다. 프라임 라운지와 글로벌
+                라운지가 마련되어 있어 인쇄나 PC, 팀플 활동을 할 수 있다.
+                <br /><br />
+                <a href="https://www.hanyang.ac.kr/web/www/re12/"
+                    >학생식당메뉴확인</a
+                >
+                <br /><a href="https://www.hanyang.ac.kr/web/www/re11/"
+                    >교직원식당메뉴확인</a
+                >
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E102_001.jpg" />
+                <img class="img" src="./src/yell/E102_002.jpg" />
+                <img class="img" src="./src/yell/E102_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E103 exp">
+            <h3>학생회관</h3>
+            <p>
+                학생지원팀, 한양보건센터, 학생상담센터, 학생회관, 학생지원팀,
+                인권센터, 총학생회, 학생복지위원회가 위치해 있다. 학생증을
+                발급하러 가거나 그 외 학부생과 관련된 업무를 처리한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E103_001.jpg" />
+                <img class="img" src="./src/yell/E103_002.jpg" />
+                <img class="img" src="./src/yell/E103_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E104 exp">
+            <h3>제2공학관</h3>
+            <p>
+                건축과 관련된 실험실들이 모여 있어 건축학과나 교통물류학과
+                학부생들이 주로 사용하는 건물이다. 자습을 할 수 있는
+                해동학술정보실이 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E104_001.jpg" />
+                <img class="img" src="./src/yell/E104_002.jpg" />
+                <img class="img" src="./src/yell/E104_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E105 exp">
+            <h3>건축디자인관</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E105_001.jpg" />
+                <img class="img" src="./src/yell/E105_002.jpg" />
+                <img class="img" src="./src/yell/E105_003.jpg" />
+                <img class="img" src="./src/yell/E105_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E106 exp">
+            <h3>초대형구조실험동</h3>
+            <p>
+                주로 제2공학관과 관련된 건축 및 토목 구조물에 대한 연구를
+                진행하는 곳이다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E106_001.jpg" />
+                <img class="img" src="./src/yell/E106_002.jpg" />
+                <img class="img" src="./src/yell/E106_003.jpg" />
+                <img class="img" src="./src/yell/E106_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E107 exp">
+            <h3>풍환경실험관</h3>
+            <p>
+                친환경건축기술연구소가 3층에 위치해 있다. 건축물을 건설했을 때
+                외부에서 발생하는 강부이나 빌딩풍의 변화를 파악하고 안전성을
+                평가한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E107_001.jpg" />
+                <img class="img" src="./src/yell/E107_002.jpg" />
+                <img class="img" src="./src/yell/E107_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E108 exp">
+            <h3>수리실험동</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E108_001.jpg" />
+                <img class="img" src="./src/yell/E108_002.jpg" />
+                <img class="img" src="./src/yell/E108_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E109 exp">
+            <h3>디자인문화관</h3>
+            <p>
+                디자인대학 학부생들이 주로 사용하는 건물이다. 실습이나 작품을
+                만들기 위한 패션디자인실과 사진촬영실, 교수휴게실이 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E109_001.jpg" />
+                <img class="img" src="./src/yell/E109_002.jpg" />
+                <img class="img" src="./src/yell/E109_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E110 exp">
+            <h3>디자인교육관</h3>
+            <p>
+                디자인대학 학부생들이 주로 사용하는 건물로 강의실이 많다.
+                영상디자인스튜디오가 2층에 마련되어 있다. 정문에서도,
+                기숙사에서도 꽤나 먼 곳에 위치해 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E110_001.jpg" />
+                <img class="img" src="./src/yell/E110_002.jpg" />
+                <img class="img" src="./src/yell/E110_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E111 exp">
+            <h3>디자인연구관</h3>
+            <p>
+                디자인대학 RC 행정팀이 있다. 교수 연구실, 산업디자인학과 4실,
+                실내환경디자인연구실, 드로잉실, 세미나실, 애니메이션제작실 등이
+                위치해 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/yell/E111_001.jpg" />
+                <img class="img" src="./src/yell/E111_002.jpg" />
+                <img class="img" src="./src/yell/E111_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <!--빨간건물-->
+        <div class="E201 exp">
+            <h3>경상관</h3>
+            <p>
+                경상대학 RC 행정팀이 위치해 있으며, 경상대학 학부생들이 주로
+                사용한다. 국제문화관과 대칭을 이루는 쌍둥이 건물이며 경상관
+                1층에는 공부를 하는 카페 몽랩, 쉼터, ‘도담’ 도서관, 팀플실 등이
+                있다. ‘꿈틀’이라는 미끄럼틀이 있어 2층에서 1층까지 재미있게
+                내려갈 수 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E201_001.jpg" />
+                <img class="img" src="./src/red/E201_002.jpg" />
+                <img class="img" src="./src/red/E201_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E202 exp">
+            <h3>국제문화관</h3>
+            <p>
+                국제문화대학 RC 행정팀이 위치해 있다. 경상관과 대칭을 이루는
+                쌍둥이 건물이다. 2층에는 아카이브 자료실과 1인 미디어 스튜디오가
+                있으며 팀플과 자습을 위한 공간인 ‘꿈의 둥지’가 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E202_001.jpg" />
+                <img class="img" src="./src/red/E202_002.jpg" />
+                <img class="img" src="./src/red/E202_003.jpg" />
+                <img class="img" src="./src/red/E202_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E203 exp">
+            <h3>사회교육관/학군단</h3>
+            <p>
+                ROTC 교육을 받는 곳이다. 1층에는 관재팀, 검수, 경인쇄실이 있고
+                2층에는 강의실, 3~4층에는 학군단이 위치해 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E203_001.jpg" />
+                <img class="img" src="./src/red/E203_002.jpg" />
+                <img class="img" src="./src/red/E203_003.jpg" />
+                <img class="img" src="./src/red/E203_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E204 exp">
+            <h3>언론정보관</h3>
+            <p>
+                언론정보대학 RC 행정팀이 위치해 있다. 학부생들이 영상을 촬영하고
+                편집할 수 있는 MCN 스튜디오가 있다. 광고홍보학부과 관련된 도서와
+                자료를 열람할 수 있는 도서관, ‘광홍상열지사’가 위치해 있다. 팀
+                프로젝트나 자습을 할 수 있는 IC-PBL실이 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E204_001.jpg" />
+                <img class="img" src="./src/red/E204_002.jpg" />
+                <img class="img" src="./src/red/E204_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E205 exp">
+            <h3>제1과학기술관(입학처 입학팀)</h3>
+            <p>
+                과학기술대학 소속 학과가 주로 사용하는 건물이다. 교수연구실과
+                광분석, 나노물질, 광전자, 지질해양학과 같은 각종 실험실이 있다.
+                IC-PBL 세미나실이 위치해 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E205_001.jpg" />
+                <img class="img" src="./src/red/E205_002.jpg" />
+                <img class="img" src="./src/red/E205_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E206 exp">
+            <h3>컨퍼런스홀</h3>
+            <p>
+                학교의 주요 행사와 대형 초청 강의가 주로 열리는 건물이다.
+                중강당, 팀 프로젝트나 자습을 할 수 있는 IC-PBL실이 위치해 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E206_001.jpg" />
+                <img class="img" src="./src/red/E206_002.jpg" />
+                <img class="img" src="./src/red/E206_003.jpg" />
+                <img class="img" src="./src/red/E206_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E207 exp">
+            <h3>제2과학기술관</h3>
+            <p>
+                과학기술융합대학 RC 행정팀이 위치해있다. 주로 물리와 화학
+                실험수업을 듣는 공학대학, 과학기술대학 학부생들이 사용한다.
+                셔틀버스 정류장인 셔틀곡과 가장 가까운 건물이다. 1층에는 개인
+                공부를 하거나 학부생들이 자유롭게 이야기 할 수 있는 공간이
+                마련되어 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E207_001.jpg" />
+                <img class="img" src="./src/red/E207_002.jpg" />
+                <img class="img" src="./src/red/E207_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E208 exp">
+            <h3>실용영어교육관</h3>
+            <p>
+                주로 영어 관련 수업을 듣는 곳으로 영어회화실이 위치해 있다.
+                한양대 에리카 캠퍼스에서 가장 오래된 건물 중 하나이다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E208_001.jpg" />
+                <img class="img" src="./src/red/E208_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E209 exp">
+            <h3>제1학술관</h3>
+            <p>
+                대형 초청 강의와 학교의 주요 행사를 진행하는 건물이다. 1층이
+                지하에 위치해 있으며 다른 건물보다 비교적 추운 편이다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/red/E209_001.jpg" />
+                <img class="img" src="./src/red/E209_002.jpg" />
+                <img class="img" src="./src/red/E209_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+        <!-- 지호 끝 -->
+        <!-- 김선명 한거 -->
+        <div class="E301 exp">
+            <h3>제1공학관</h3>
+            <p>
+                공학대학에서 사용하는 5층 규모의 강의동이다. 해동학술정보실(Open
+                Space), 공학대학 공용 캡스톤디자인실이 있으며 3, 4층에서
+                제3공학관과 구름다리로 연결되어 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E301_001.jpg" />
+                <img class="img" src="./src/blue/E301_002.jpg" />
+                <img class="img" src="./src/blue/E301_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E302 exp">
+            <h3>폐수처리장관리동</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E302_003.jpg" />
+                <img class="img" src="./src/blue/E302_001.jpg" />
+                <img class="img" src="./src/blue/E302_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E303 exp">
+            <h3>제3공학관</h3>
+            <p>
+                제1공학관과 구름다리로 연결되어 있는 제3공학관이다. 지하에
+                공대학생회실, 편의점이 있고, 2층에 공학대학 행정팀이 있다. 3층
+                이상에선 제4공학관과 연결되어 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E303_001.jpg" />
+                <img class="img" src="./src/blue/E303_003.jpg" />
+                <img class="img" src="./src/blue/E303_004.jpg" />
+                <img class="img" src="./src/blue/E303_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E304 exp">
+            <h3>제4공학관</h3>
+            <p>
+                제3공학관과 연결되어 있는 제4공학관이다. 대규모의 PC실이
+                위치한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E304_003.jpg" />
+                <img class="img" src="./src/blue/E304_002.jpg" />
+                <img class="img" src="./src/blue/E304_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E305 exp">
+            <h3>제5공학관</h3>
+            <p>
+                지하에 Knowledge Bunker 라운지가 있고, 공학대학 교수연구실이
+                많다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E305_005.jpg" />
+                <img class="img" src="./src/blue/E305_002.jpg" />
+                <img class="img" src="./src/blue/E305_003.jpg" />
+                <img class="img" src="./src/blue/E305_004.jpg" />
+                <img class="img" src="./src/blue/E305_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E306 exp">
+            <h3>버스승강장(셔틀콕)</h3>
+            <p>
+                정문쪽에 위치한 셔틀버스승강장이다. 셔틀콕이란 이름은 셔틀과
+                콜라의 합성어로 콜라 한 잔의 여유와 함께 셔틀버스를 기다리는
+                곳이라는 의미이다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E306_003.jpg" />
+                <img class="img" src="./src/blue/E306_002.jpg" />
+                <img class="img" src="./src/blue/E306_001.jpg" />
+                <img class="img" src="./src/blue/E306_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E307 exp">
+            <h3>게스트하우스</h3>
+            <p>
+                ERICA 컨벤션센터라고도 불리며 연구실 직원이나 대학원생들이 주로
+                사용하는 숙소다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E307_001.jpg" />
+                <img class="img" src="./src/blue/E307_002.jpg" />
+                <img class="img" src="./src/blue/E307_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E308 exp">
+            <h3>창업보육센터</h3>
+            <p>
+                창업을 지원하기 위한 건물로 여러 벤처기업들이 입주해있다. 지하에
+                창업보육센터식당이 있다.
+
+                <br /><br />
+                <a href="https://www.hanyang.ac.kr/web/www/re15/"
+                    >창업보육센터식당메뉴확인</a
+                >
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E308_001.jpg" />
+                <img class="img" src="./src/blue/E308_003.jpg" />
+                <img class="img" src="./src/blue/E308_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E309 exp">
+            <h3>약학관</h3>
+            <p>약학대학에서 사용하는 건물이다. 2층에 약학대학 행정실이 있다.</p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E309_004.jpg" />
+                <img class="img" src="./src/blue/E309_001.jpg" />
+                <img class="img" src="./src/blue/E309_002.jpg" />
+                <img class="img" src="./src/blue/E309_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E310 exp">
+            <h3>동물실험동</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E310_001.jpg" />
+                <img class="img" src="./src/blue/E310_002.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E311 exp">
+            <h3>학연산클러스터지원센터</h3>
+            <p>
+                소프트웨어융합대학에서 사용하는 건물이다. 5층에
+                소프트웨어융합대학 행정팀과 Thinking Cubes가 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E311_003.jpg" />
+                <img class="img" src="./src/blue/E311_002.jpg" />
+                <img class="img" src="./src/blue/E311_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E312 exp">
+            <h3>공장형실험동</h3>
+            <p>산학연협력관이다.</p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E312_002.jpg" />
+                <img class="img" src="./src/blue/E312_003.jpg" />
+                <img class="img" src="./src/blue/E312_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E313 exp">
+            <h3>포장가속실험동</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E313_001.jpg" />
+                <img class="img" src="./src/blue/E313_002.jpg" />
+                <img class="img" src="./src/blue/E313_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E314 exp">
+            <h3>퓨전전기기술응용연구센터</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E314_002.jpg" />
+                <img class="img" src="./src/blue/E314_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E315 exp">
+            <h3>BMR센터</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E315_001.jpg" />
+                <img class="img" src="./src/blue/E315_002.jpg" />
+                <img class="img" src="./src/blue/E315_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E316 exp">
+            <h3>Lion's Hall</h3>
+            <p>행사에 주로 사용되는 건물이다.</p>
+            <div class="wrap">
+                <img class="img" src="./src/blue/E316_001.jpg" />
+                <img class="img" src="./src/blue/E316_002.jpg" />
+                <img class="img" src="./src/blue/E316_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E401 exp">
+            <h3>학술정보관</h3>
+            <p>
+                ERICA의 도서관이다. 열람실, 그룹스터디룸, 북카페, 자료실과
+                커리어개발센터가 있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E401_003.jpg" />
+                <img class="img" src="./src/green/E401_002.jpg" />
+                <img class="img" src="./src/green/E401_001.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E402 exp">
+            <h3>체육관</h3>
+            <p>
+                예체능대학에서 사용하는 체육관이다. 헬스장과 예체능대학 행정팀이
+                있다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E402_001.jpg" />
+                <img class="img" src="./src/green/E402_002.jpg" />
+                <img class="img" src="./src/green/E402_003.jpg" />
+                <img class="img" src="./src/green/E402_004.jpg" />
+                <img class="img" src="./src/green/E402_005.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E403 exp">
+            <h3>실용음악관(Muse Hall)</h3>
+            <p>실용음악학과에서 사용하는 실용음악관이다. 개인연습실이 있다.</p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E403_001.jpg" />
+                <img class="img" src="./src/green/E403_002.jpg" />
+                <img class="img" src="./src/green/E403_003.jpg" />
+                <img class="img" src="./src/green/E403_004.jpg" />
+                <img class="img" src="./src/green/E403_005.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E404 exp">
+            <h3>골프연습장</h3>
+            <p>
+                사회교육원에서 사용하는 골프연습장이다. 교양 골프 수업을
+                진행한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E404_001.jpg" />
+                <img class="img" src="./src/green/E404_002.jpg" />
+                <img class="img" src="./src/green/E404_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E405 exp">
+            <h3>대운동장본부석</h3>
+            <p></p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E405_001.jpg" />
+                <img class="img" src="./src/green/E405_002.jpg" />
+                <img class="img" src="./src/green/E405_003.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+
+        <div class="E406 exp">
+            <h3>테니스장관리동</h3>
+            <p>
+                교양 테니스 수업이 진행되는 테니스장이다. 외부인들도 이용한다.
+            </p>
+            <div class="wrap">
+                <img class="img" src="./src/green/E406_001.jpg" />
+                <img class="img" src="./src/green/E406_002.jpg" />
+                <img class="img" src="./src/green/E406_003.jpg" />
+                <img class="img" src="./src/green/E406_004.jpg" />
+            </div>
+            <button class="close">close</button>
+        </div>
+        <!-- 김선명 한거 끝 -->
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

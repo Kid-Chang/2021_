@@ -1,0 +1,83 @@
+.title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    max-width: 640px;
+}
+
+.nav_big {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: bold;
+    max-width: 100%;
+    margin-block-start: 14%;
+}
+
+.nav_mid {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 100%;
+    margin-block-start: 22%;
+}
+
+.nav_small {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-block-start: 26%;
+}
+
+.email-write {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-block-start: 30%;
+}
+
+.email-write input {
+    width: 20%;
+    padding: 30px 50px 10px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.email-write input:focus + label,
+.email-write input:valid + label {
+    margin-top: -1px;
+    margin-left: -15px;
+    font-size: 13px;
+    font-weight: 900;
+    transition: all .3s ease;
+}
+
+.email-write label {
+    position: absolute; left: -100px; top: 0;
+    width: 79%;
+    margin-top: 16px;
+    color: #8c8c8c;
+    text-align: center;
+    font-size: 18px;
+}
+
+.email-write button {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 30px;
+    outline: none;
+    border-radius: 2px;
+    width: 230px;
+    height: 63px;
+}
